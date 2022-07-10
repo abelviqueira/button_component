@@ -1,9 +1,58 @@
-.button {
+button {
     padding: 8px 16px;
     background: #E0E0E0;
     color: #3F3F3F;
     width: fit-content;
+    font-size: 14px;
+    font-weight: 500;
     border-radius: 6px;
     box-shadow: 0px 2px 3px 0px #33333333;
-    margin: 20px 0;
+    margin: 12px 0;
+    text-decoration: none;
+    display: block;
+    transition: .5s all;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover, button:focus {
+    background: #AEAEAE;
+}
+
+button.outline {
+    background: transparent;
+    color: #3D5AFE;
+    border: 1px solid #3D5AFE;
+    box-shadow: none;
+}
+
+button.outline:hover, button.outline:focus {
+    background-color: rgba(41, 98, 255, 0.1);
+    color: #3D5AFE;
+}
+
+button.text {
+    background: transparent !important;
+    color: #3D5AFE;
+    border: none;
+    box-shadow: none;
+}
+
+
+button.text:hover, button.text:focus {
+    background-color: rgba(41, 98, 255, 0.1);
+    color: #3D5AFE;
+}
+
+button.disableShadow {
+    box-shadow: none;
+    background-color: rgba(61, 90, 254, 1);
+    color: white;
+}
+
+button.disabled {
+    background-color: #E0E0E0;
+    color: #9E9E9E;
+    cursor: not-allowed;
 }

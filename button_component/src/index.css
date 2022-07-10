@@ -17,3 +17,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+p {
+  font-family: var(--font-ubuntu);
+  font-size: em(12px);
+  line-height: em(12px);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 20px;
+  margin-top: 25px;
+}
