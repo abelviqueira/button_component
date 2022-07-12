@@ -6,11 +6,17 @@ class Button extends Component {
         let variant = typeof this.props.variant !== 'undefined' ? this.props.variant : false;
         let disabled = typeof this.props.disabled !== 'undefined' ? 'disabled' : false;
         let disableShadow = typeof this.props.disableShadow !== 'undefined' ? 'disableShadow' : false;
+        let color = typeof this.props.color !== 'undefined' ? this.props.color : false;
+        let size = typeof this.props.size !== 'undefined' ? this.props.size : false;
+        let startIcon = typeof this.props.startICon !== 'undefined' ? this.props.startIcon : false;
+        let endIcon = typeof this.props.endIcon !== 'undefined' ? this.props.endIcon : false;
 
         this.classes = {
             variant: variant,
             disabled: disabled,
             disableShadow: disableShadow,
+            color: color,
+            size: size,
         }
         
     }
